@@ -1,0 +1,92 @@
+/* This code is very simple and pretty much self-explanatory. Because,
+If you notice the code itself you will find that all the different section
+of the logo for example head, left-eye etc. are described as a class in this stylesheet.
+It makes the code much more readable I believe. By the way, Thanks for looking up the code. Feel free to
+play with it.
+*/
+div {
+  padding: 0;
+  margin: 0;
+}
+div div {
+  background: #A4CA39;
+  position: relative;
+}
+.android {
+  heigth: 404px;
+  width: 334px;
+  margin: 100px auto;
+}
+.head {
+  width: 220px;
+  height: 100px;
+  top: 32px;
+  border-radius: 110px 110px 0 0;
+  -webkit-transition: all 0.1s eas-in;
+}
+.l-eye, .r-eye {
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 42px;
+  border-radius: 10px;
+}
+.l-eye {
+  left: 50px;
+}
+.r-eye {
+  right: 50px;
+}
+.l-ant, .r-ant {
+  width: 6px;
+  height: 50px;
+  position: absolute;
+  top: -34px;
+  border-radious: 3px;
+}
+.l-ant {
+  left: 50px;
+  transform: rotate(-30deg);
+}
+.r-ant {
+  right: 50px;
+	transform: rotate(30deg);
+}
+.body {
+  width: 220px;
+  height: 184px;
+  top:  40px;
+  border-radius: 0 0 25px 25px;
+}
+.l-arm, .r-arm, .l-leg, .r-leg {
+	width: 50px; position: absolute;
+	-webkit-transition: all 0.1s ease-in;
+}
+.l-arm, .r-arm {
+	height: 150px;
+	border-radius: 25px;
+	
+}
+.l-leg, .r-leg {
+	height: 80px; top: 182px;
+	border-radius: 0 0 25px 25px;
+}
+.l-arm {left: -58px;}
+.r-arm {right: -58px;}
+.l-leg {left: 45px;}
+.r-leg {right: 45px;}
+
+.head:hover {
+  transform: rotate(-5deg) translate(-4px, -8px);
+}
+.l-arm:hover {
+  	transform: rotate(15deg) translate(-14px, 0);
+}
+.r-arm:hover {
+  	transform: rotate(-30deg) translate(30px, 0);
+
+}
+
+
+
